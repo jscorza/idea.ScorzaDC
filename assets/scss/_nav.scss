@@ -1,0 +1,19 @@
+nav{
+    grid-area: nav;
+    background-color: $colorGeneral;;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    ul li{
+        padding: 4px;
+     }
+}
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+.tamIcono{
+    width: 15px;
+  
+}

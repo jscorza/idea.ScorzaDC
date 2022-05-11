@@ -1,0 +1,1315 @@
+.bodyHombres {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 60px 130px auto 60px;
+      grid-template-rows: 60px 130px auto 60px;
+      grid-template-areas: "nav nav" "header header" "main main" "footer footer";
+}
+
+.bodyHombres nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+}
+
+.bodyHombres header {
+  background-color: #5f4444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+.bodyHombres header video {
+  width: 50%;
+  height: 100%;
+}
+
+.bodyHombres main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+}
+
+.bodyHombres footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+.video3 {
+  width: 0% !important;
+}
+
+.video4 {
+  width: 0% !important;
+}
+
+.contenedorTarjetaH {
+  background-color: #5f4444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES */
+.ramones {
+  background-image: url(../img/prodHombres/buzos/BuzoRamonesNegro.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.buzoGrey {
+  background-image: url(../img/prodHombres/buzos/buzogris.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.buzoInd {
+  background-image: url(../img/prodHombres/buzos/BuzoIndustrialBlanco.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.buzoNegro {
+  background-image: url(../img/prodHombres/buzos/buzonegro.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.jean1 {
+  background-image: url(../img/prodHombres/jeans/jean1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.jean2roto {
+  background-image: url(../img/prodHombres/jeans/jean2roto.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.jeanBlanco {
+  background-image: url(../img/prodHombres/jeans/jeanBlanco.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.jeanNegro {
+  background-image: url(../img/prodHombres/jeans/jeanNegro.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.jeanNegroRoto {
+  background-image: url(../img/prodHombres/jeans/jeanNegroRoto.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+}
+
+/* RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE */
+@media (min-width: 480px) {
+  .bodyHombres {
+    -ms-grid-rows: 80px auto;
+        grid-template-rows: 80px auto;
+  }
+  .bodyHombres .tarjeta {
+    height: 300px !important;
+  }
+  .bodyHombres header video {
+    width: 33.33%;
+  }
+  .video3 {
+    width: 33.33% !important;
+  }
+}
+
+@media (min-width: 600px) {
+  .bodyHombres {
+    -ms-grid-rows: 80px auto;
+        grid-template-rows: 80px auto;
+  }
+  .bodyHombres .tarjeta {
+    height: 350px !important;
+    background-size: contain !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedorTarjetaH {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .bodyHombres .tarjeta {
+    height: 350px !important;
+    background-size: cover !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.tamIcono {
+  width: 15px;
+}
+
+.titulo,
+.titulo::after {
+  padding: 5px 7px;
+  font-size: 34px;
+  background: linear-gradient(45deg, transparent 5%, #fffefe75 5%);
+  border: 0;
+  color: black;
+  letter-spacing: 3px;
+  line-height: 1;
+  -webkit-box-shadow: 6px 0px 0px #00e6f61c;
+          box-shadow: 6px 0px 0px #00e6f61c;
+  outline: transparent;
+  position: relative;
+  border-radius: 20px 20px;
+}
+
+.titulo::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  content: "WE ARE STYLE";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #baafaf 3%, #05050558 5%, #baafaf 5%);
+  text-shadow: -3px -3px 0px #f81d052c, 3px 3px 0px #00e6f69b;
+  -webkit-clip-path: var(--slice-0);
+          clip-path: var(--slice-0);
+}
+
+.titulo:hover::after {
+  -webkit-animation: 1s glitch;
+          animation: 1s glitch;
+  -webkit-animation-timing-function: steps(2, end);
+          animation-timing-function: steps(2, end);
+}
+
+@-webkit-keyframes glitch {
+  0% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    -webkit-transform: translate(-20px, -10px);
+            transform: translate(-20px, -10px);
+  }
+  10% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px);
+  }
+  20% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    -webkit-transform: translate(-10px, 10px);
+            transform: translate(-10px, 10px);
+  }
+  30% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    -webkit-transform: translate(0px, 5px);
+            transform: translate(0px, 5px);
+  }
+  40% {
+    -webkit-clip-path: var(--slice-2);
+            clip-path: var(--slice-2);
+    -webkit-transform: translate(-5px, 0px);
+            transform: translate(-5px, 0px);
+  }
+  50% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    -webkit-transform: translate(5px, 0px);
+            transform: translate(5px, 0px);
+  }
+  60% {
+    -webkit-clip-path: var(--slice-4);
+            clip-path: var(--slice-4);
+    -webkit-transform: translate(5px, 10px);
+            transform: translate(5px, 10px);
+  }
+  70% {
+    -webkit-clip-path: var(--slice-2);
+            clip-path: var(--slice-2);
+    -webkit-transform: translate(-10px, 10px);
+            transform: translate(-10px, 10px);
+  }
+  80% {
+    -webkit-clip-path: var(--slice-5);
+            clip-path: var(--slice-5);
+    -webkit-transform: translate(20px, -10px);
+            transform: translate(20px, -10px);
+  }
+  90% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    -webkit-transform: translate(-10px, 0px);
+            transform: translate(-10px, 0px);
+  }
+  100% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    -webkit-transform: translate(-20px, -10px);
+            transform: translate(-20px, -10px);
+  }
+  10% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px);
+  }
+  20% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    -webkit-transform: translate(-10px, 10px);
+            transform: translate(-10px, 10px);
+  }
+  30% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    -webkit-transform: translate(0px, 5px);
+            transform: translate(0px, 5px);
+  }
+  40% {
+    -webkit-clip-path: var(--slice-2);
+            clip-path: var(--slice-2);
+    -webkit-transform: translate(-5px, 0px);
+            transform: translate(-5px, 0px);
+  }
+  50% {
+    -webkit-clip-path: var(--slice-3);
+            clip-path: var(--slice-3);
+    -webkit-transform: translate(5px, 0px);
+            transform: translate(5px, 0px);
+  }
+  60% {
+    -webkit-clip-path: var(--slice-4);
+            clip-path: var(--slice-4);
+    -webkit-transform: translate(5px, 10px);
+            transform: translate(5px, 10px);
+  }
+  70% {
+    -webkit-clip-path: var(--slice-2);
+            clip-path: var(--slice-2);
+    -webkit-transform: translate(-10px, 10px);
+            transform: translate(-10px, 10px);
+  }
+  80% {
+    -webkit-clip-path: var(--slice-5);
+            clip-path: var(--slice-5);
+    -webkit-transform: translate(20px, -10px);
+            transform: translate(20px, -10px);
+  }
+  90% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    -webkit-transform: translate(-10px, 0px);
+            transform: translate(-10px, 0px);
+  }
+  100% {
+    -webkit-clip-path: var(--slice-1);
+            clip-path: var(--slice-1);
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+.tarjeta__boton {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #212529;
+  color: #212529;
+}
+
+.tarjeta__boton:hover {
+  color: #fff;
+}
+
+.tarjeta__boton:hover:after {
+  width: 100%;
+}
+
+.tarjeta__boton:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #212529;
+}
+
+/*  hover menu nav hover menu nav hover menu nav hover menu nav hover menu nav */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+}
+
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background: #e1e1e13c;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border-radius: 20px;
+}
+
+.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #baafaf;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+  color: #080808;
+}
+
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+.bodyContacto {
+  background-color: #baafaf;
+}
+
+.bodyContacto section {
+  margin: 15px 5px;
+}
+
+.formsC {
+  background-color: rgba(30, 5, 5, 0.219);
+  padding: 20px 10px;
+  border: double 3px;
+  border-radius: 20px;
+}
+
+.bott {
+  background-color: #baafaf !important;
+  border-color: #212529;
+}
+
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  background-color: #baafaf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ul {
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3px;
+}
+
+ul li {
+  display: inline-block;
+  padding: 1px;
+}
+
+.bodyIndex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 60px 250px 200px 70px;
+      grid-template-rows: 60px 250px 200px 70px;
+      grid-template-areas: "nav nav" "header header" "main main" "footer footer";
+}
+
+.bodyIndex header {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  background-image: url(../img/gente1_700x.jpg);
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bodyIndex main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.contenedorH {
+  width: 40%;
+  background-image: url(../img/deco/gente2_65.jpg);
+  background-size: cover;
+}
+
+.contenedorH a {
+  font-size: 150%;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0.354);
+  border-radius: 30px;
+}
+
+.contenedorM {
+  background-image: url(../img/deco/mujeresdec_55.jpg);
+  background-size: cover;
+  width: 60%;
+}
+
+.contenedorM a {
+  font-size: 150%;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0.354);
+  border-radius: 30px;
+}
+
+@media (min-width: 600px) {
+  nav {
+    font-size: 28px;
+  }
+  .tamIcono {
+    width: 28px;
+  }
+  .bodyIndex {
+    -ms-grid-rows: 70px 400px 350px 90px;
+        grid-template-rows: 70px 400px 350px 90px;
+  }
+  .titulo {
+    font-size: 54px;
+  }
+  .contenedorH a {
+    font-size: 45px;
+  }
+  .contenedorM a {
+    font-size: 45px;
+    padding-left: 23px;
+  }
+  footer div {
+    font-size: 26px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer div:nth-child(1) ul li:nth-child(3) {
+    padding-left: 30px;
+  }
+  .tamIconoR {
+    width: 40px;
+  }
+}
+
+@media (min-width: 1024PX) {
+  nav {
+    font-size: 45px;
+  }
+  .tamIcono {
+    width: 37px !important;
+  }
+  .bodyIndex {
+    -ms-grid-rows: 120px 600px 400px 120px;
+        grid-template-rows: 120px 600px 400px 120px;
+  }
+  .bodyIndex header {
+    background-image: url(../img/deco/gente1.jpg);
+  }
+  .titulo {
+    font-size: 70px !important;
+  }
+  .contenedorH a {
+    font-size: 60px;
+  }
+  .contenedorM a {
+    font-size: 60px;
+    padding-left: 23px;
+  }
+  footer div {
+    font-size: 38px;
+  }
+  footer div:nth-child(1) ul li:nth-child(3) {
+    padding-left: 40px;
+  }
+  .tamIconoR {
+    width: 60px;
+  }
+}
+
+.bodyMujeres {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 60px 120PX auto 60px;
+      grid-template-rows: 60px 120PX auto 60px;
+      grid-template-areas: "nav nav" "header header" "main main" "footer footer";
+}
+
+.bodyMujeres nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+}
+
+.bodyMujeres header {
+  background-color: #bdd9e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+.bodyMujeres header video {
+  width: 25%;
+  height: 100%;
+}
+
+.bodyMujeres main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+}
+
+.bodyMujeres footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+.video3m {
+  width: 0% !important;
+}
+
+.contenedorTarjetaM {
+  background-color: #bdd9e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES */
+.jeanBaggyWhite {
+  background-image: url(../img/prodMujeres/jeans/jeanBaggyWhite.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.jeanWideBlue {
+  background-image: url(../img/prodMujeres/jeans/jeanWideBlue.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.jeanRectosCanesu {
+  background-image: url(../img/prodMujeres/jeans/rectosCanesu.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.jeanRectosTB {
+  background-image: url(../img/prodMujeres/jeans/rectosTirobajo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.jeanWideBlack {
+  background-image: url(../img/prodMujeres/jeans/wideBlack.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.vestidoCortoCrochetRayas {
+  background-image: url(../img/prodMujeres/vestidos/cortoCrochetRayas.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.vestidoCortoFrunces {
+  background-image: url(../img/prodMujeres/vestidos/cortoFrunces.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.vestidoCortoTirantesFrunce {
+  background-image: url(../img/prodMujeres/vestidos/cortoTirantesFrunce.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.vestidoMidiTexture {
+  background-image: url(../img/prodMujeres/vestidos/miditexture.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE */
+@media (min-width: 480px) {
+  .bodyMujeres {
+    -ms-grid-rows: 80px auto;
+        grid-template-rows: 80px auto;
+  }
+  .bodyMujeres .tarjeta {
+    height: 300px !important;
+  }
+  .bodyMujeres header video {
+    width: 16.66%;
+  }
+  .video3m {
+    width: 16.66% !important;
+  }
+}
+
+@media (min-width: 600px) {
+  .bodyMujeres {
+    -ms-grid-rows: 80px auto;
+        grid-template-rows: 80px auto;
+  }
+  .bodyMujeres .tarjeta {
+    height: 350px !important;
+    background-size: contain !important;
+  }
+  .tituloSeason {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedorTarjetaM {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .bodyMujeres .tarjeta {
+    height: 350px !important;
+    background-size: cover !important;
+  }
+}
+
+nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+  background-color: #baafaf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav ul li {
+  padding: 4px;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.tamIcono {
+  width: 15px;
+}
+
+.bodyNuevo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 80px 300px auto 80px;
+      grid-template-rows: 80px 300px auto 80px;
+      grid-template-areas: "nav nav" "header header" "main main" "footer footer";
+}
+
+.bodyNuevo nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+}
+
+.bodyNuevo header {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(../img/novedades/Summer_collection_man.jpg);
+  background-size: contain;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyNuevo header .titulo {
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.354);
+  border-radius: 30px;
+  font-size: 34px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.bodyNuevo header h2 {
+  background-color: rgba(255, 255, 255, 0.354);
+  border-radius: 30px;
+  font-size: 24px;
+}
+
+.bodyNuevo header h3 {
+  background-color: rgba(255, 255, 255, 0.354);
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.bodyNuevo main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bodyNuevo footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+.tituloSeasonCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  background-color: #baafaf;
+}
+
+.tituloSeason {
+  font-size: 30px;
+  background-color: #baafaf;
+}
+
+/* SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY */
+.videoHolCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.videoHol {
+  width: 50%;
+}
+
+.seasonHoliday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contenedorTarjetaHoliday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.holCamisetaYellow {
+  background-image: url(../img/novedades/holiday/camisetaHolidayYellow.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.holBanadorPrintFlores {
+  background-image: url(../img/novedades/holiday/banadorprintflores.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.holBermudaVaquerasSFrotos {
+  background-image: url(../img/novedades/holiday/bermudaVaqueraSFrotos.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.holGorraAzulDelavadaCalifornia {
+  background-image: url(../img/novedades/holiday/gorraAzulDelavadaCaliforniajpg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.holGorroBucketBordado {
+  background-image: url(../img/novedades/holiday/gorroBucketBordado.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION */
+.imgTwin {
+  width: 70%;
+}
+
+.contenedorTarjetaTwin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.contenedorTarjetaTwinAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.contenedorTarjetaImgTwin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.TwinBlusaPlisadaGreen {
+  background-image: url(../img/novedades/twin/blusaPlisadaGreen.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.TwinPantalonPlisadoGreen {
+  background-image: url(../img/novedades/twin/pantalonPLisadoGreen.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.TwinPantalonCampanaDegradado {
+  background-image: url(../img/novedades/twin/pantaloncampanadegradado.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.TwinTopCutOutDegradado {
+  background-image: url(../img/novedades/twin/topcutoutdegradado.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.TwinPantalonWideRed {
+  background-image: url(../img/novedades/twin/pantalonwideRed.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.TwinCazadoraRed {
+  background-image: url(../img/novedades/twin/cazadoraRed.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.TwinChalecoVestirButtons {
+  background-image: url(../img/novedades/twin/chalecoVestirButtons.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.TwinPantalonCargoButtons {
+  background-image: url(../img/novedades/twin/pantalonCargoButtons.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.TwinSobrecamisaFlyRayas {
+  background-image: url(../img/novedades/twin/sobrecamisaFlyRayas.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.TwinJeansFlyRayas {
+  background-image: url(../img/novedades/twin/jeansFlyRayas.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.TwinPantalonCarpenter {
+  background-image: url(../img/novedades/twin/pantalonCarpenter.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.CazadoraCropped {
+  background-image: url(../img/novedades/twin/cazadoraCropped.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 600px) {
+  .headerNovedades {
+    background-size: cover !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .bodyNuevo {
+    -ms-grid-rows: 80px 400px auto 80px !important;
+        grid-template-rows: 80px 400px auto 80px !important;
+  }
+  .headerNovedades h1 {
+    font-size: 50px !important;
+  }
+  .headerNovedades h2 {
+    font-size: 45px !important;
+  }
+  .headerNovedades h3 {
+    font-size: 40px !important;
+  }
+  .tarjeta {
+    height: 300px !important;
+  }
+  .imgTwin {
+    width: 60% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  ul {
+    padding: 5px;
+  }
+  ul li {
+    padding: 7px;
+  }
+  .seasonHoliday {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .videoHolCont {
+    width: 30%;
+  }
+  .contenedorTarjetaHoliday {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
+  }
+  .contenedorTarjetaImgTwin {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .imgTwin {
+    width: 90% !important;
+  }
+}
+
+.bodySobre {
+  background-color: #baafaf;
+}
+
+.bodySobre header {
+  background-image: url(../img/sobreNos/header2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bodySobre header div {
+  padding: 20px;
+  margin: 30px 0px;
+  background-color: rgba(255, 255, 255, 0.372);
+  border-radius: 20px;
+}
+
+.bodySobre header div:hover {
+  background-color: #baafaf;
+}
+
+.bodySobre header div h2 {
+  text-decoration: underline;
+}
+
+.tarjeta {
+  width: 40%;
+  height: 230px;
+  background-color: #baafaf;
+  border-radius: 10px;
+  margin: 10px;
+  -webkit-box-shadow: 2px 2px 7px 2px;
+          box-shadow: 2px 2px 7px 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tarjeta__titulo {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-size: 13px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: solid 20px;
+          box-shadow: solid 20px;
+}
+
+.tarjeta__img {
+  height: 90%;
+}
+
+.tarjeta__boton {
+  position: relative;
+}
+
+.titulo {
+  height: 15%;
+  background-color: rgba(255, 255, 255, 0.354);
+  border-radius: 30px;
+  font-size: 34px;
+}
+
+.tituloHM {
+  padding-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */

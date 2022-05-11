@@ -1,0 +1,127 @@
+.bodyHombres{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 130px auto 60px;
+    grid-template-areas: "nav nav" "header header" "main main" "footer footer";
+    nav{
+        grid-area: nav;
+    }
+    header{
+        background-color:rgb(95, 68, 68) ;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-area: header;
+        video{
+            width: 50%;
+            height: 100%;
+        }
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    
+    }
+}
+.video3{
+    width: 0% !important;
+}
+.video4{
+    width: 0% !important;
+}
+.contenedorTarjetaH{
+    background-color:rgb(95, 68, 68) ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES  ROPA HOMBRES */
+.ramones{
+    background-image: url(../img/prodHombres/buzos/BuzoRamonesNegro.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.buzoGrey{
+    background-image: url(../img/prodHombres/buzos/buzogris.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.buzoInd{
+    background-image: url(../img/prodHombres/buzos/BuzoIndustrialBlanco.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.buzoNegro{
+    background-image: url(../img/prodHombres/buzos/buzonegro.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.jean1{
+    background-image: url(../img/prodHombres/jeans/jean1.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.jean2roto{
+    background-image: url(../img/prodHombres/jeans/jean2roto.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.jeanBlanco{
+    background-image: url(../img/prodHombres/jeans/jeanBlanco.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.jeanNegro{
+    background-image: url(../img/prodHombres/jeans/jeanNegro.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.jeanNegroRoto{
+    background-image: url(../img/prodHombres/jeans/jeanNegroRoto.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: local;
+
+}
+/* RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE */
+@media (min-width: 480px){
+    .bodyHombres {
+        grid-template-rows: 80px auto;
+        .tarjeta{
+        height: 300px !important;
+        }
+        header video{
+            width: 33.33% ;
+        }
+    }
+    .video3{
+        width: 33.33% !important;
+    }
+}
+@media (min-width:600px){
+    .bodyHombres{
+        grid-template-rows: 80px auto;
+        .tarjeta{
+            height: 350px !important;
+            background-size: contain !important;
+        }
+    }
+    
+}
+@media (min-width:1024px){
+    .contenedorTarjetaH{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .bodyHombres .tarjeta{
+        height: 350px !important;
+        background-size: cover !important;
+    }
+}

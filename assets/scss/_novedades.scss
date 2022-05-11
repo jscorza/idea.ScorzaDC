@@ -1,0 +1,254 @@
+.bodyNuevo{ 
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 300px auto 80px;
+    grid-template-areas: "nav nav" "header header" "main main" "footer footer" ;
+    nav{
+        grid-area: nav;
+    }
+    header{
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(../img/novedades/Summer_collection_man.jpg);
+        background-size:contain;
+        align-items: center;
+        .titulo{
+            height: auto;    
+            background-color: rgba(255, 255, 255, 0.354);
+            border-radius: 30px;
+            font-size: 34px;
+            align-self: start;
+            
+        }
+        h2 {
+       
+            background-color: rgba(255, 255, 255, 0.354);
+            border-radius: 30px;
+            font-size: 24px;
+        }
+        h3 {
+            background-color: rgba(255, 255, 255, 0.354);
+            border-radius: 30px;
+            font-size: 20px;
+        }
+
+    } 
+    main{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+
+
+
+.tituloSeasonCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: $colorGeneral;
+    
+}
+.tituloSeason{
+    font-size: 30px;
+    background-color: $colorGeneral;
+}
+
+/* SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY  SEASON HOLIDAY */
+.videoHolCont{
+    display: flex;
+    justify-content: center;
+}
+.videoHol{
+    width: 50%;
+    
+}
+.seasonHoliday{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorTarjetaHoliday{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color:white ;
+}
+.holCamisetaYellow{
+background-image: url(../img/novedades/holiday/camisetaHolidayYellow.jpg);
+background-position: center;
+background-size: cover;
+}
+.holBanadorPrintFlores{
+background-image: url(../img/novedades/holiday/banadorprintflores.jpg);
+background-position: center;
+background-size: cover;
+}
+.holBermudaVaquerasSFrotos{
+background-image: url(../img/novedades/holiday/bermudaVaqueraSFrotos.jpg);
+background-position: center;
+background-size: cover;
+}
+.holGorraAzulDelavadaCalifornia{
+background-image: url(../img/novedades/holiday/gorraAzulDelavadaCaliforniajpg.jpg);
+background-position: center;
+background-size: cover;
+}
+.holGorroBucketBordado{
+background-image: url(../img/novedades/holiday/gorroBucketBordado.jpg);
+background-position: center;
+background-size: cover;
+}
+/* TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION  TWINS COLLECTION */
+.imgTwin{
+    width: 70%;
+}
+.contenedorTarjetaTwin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color:white ;
+}
+.contenedorTarjetaTwinAll{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color:white ;
+
+}
+.contenedorTarjetaImgTwin{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+     
+}
+
+.TwinBlusaPlisadaGreen{
+    background-image: url(../img/novedades/twin/blusaPlisadaGreen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.TwinPantalonPlisadoGreen{
+    background-image: url(../img/novedades/twin/pantalonPLisadoGreen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.TwinPantalonCampanaDegradado{
+    background-image: url(../img/novedades/twin/pantaloncampanadegradado.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.TwinTopCutOutDegradado{
+    background-image: url(../img/novedades/twin/topcutoutdegradado.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.TwinPantalonWideRed{
+    background-image: url(../img/novedades/twin/pantalonwideRed.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.TwinCazadoraRed{
+    background-image: url(../img/novedades/twin/cazadoraRed.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.TwinChalecoVestirButtons{
+    background-image: url(../img/novedades/twin/chalecoVestirButtons.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.TwinPantalonCargoButtons{
+    background-image: url(../img/novedades/twin/pantalonCargoButtons.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.TwinSobrecamisaFlyRayas{
+    background-image: url(../img/novedades/twin/sobrecamisaFlyRayas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.TwinJeansFlyRayas{
+    background-image: url(../img/novedades/twin/jeansFlyRayas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.TwinPantalonCarpenter{
+    background-image: url(../img/novedades/twin/pantalonCarpenter.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.CazadoraCropped{
+    background-image: url(../img/novedades/twin/cazadoraCropped.jpg);
+    background-position: center;
+    background-size: cover;
+}
+@media  ( min-width : 600px ){
+    .headerNovedades{
+        background-size: cover !important;
+        align-items: flex-start !important;
+    }
+    .bodyNuevo{ 
+        grid-template-rows: 80px 400px auto 80px !important;
+    }
+    .headerNovedades h1 {
+        font-size: 50px !important;
+    }
+    .headerNovedades h2 {
+        font-size: 45px !important;
+    }
+    .headerNovedades h3 {
+        font-size: 40px !important;
+    }
+    .tarjeta{
+        height: 300px !important;
+    }
+    .imgTwin{
+        width: 60% !important;
+    }
+}
+@media (min-width: 1024px){
+    nav{
+        justify-content: space-between !important;
+    }
+    ul{
+        padding: 5px;
+    }
+    ul li {
+        padding: 7px;
+    }
+    .seasonHoliday{
+        flex-direction: row !important;
+    }
+    .videoHolCont{
+        width: 30% ;
+    }
+    .contenedorTarjetaHoliday{
+    
+        display: flex;
+        flex-wrap: nowrap !important;        
+    }
+    .contenedorTarjetaImgTwin{
+        flex-direction: row !important;
+    }
+    .imgTwin{
+        width: 90% !important;
+        
+    }
+
+    
+}

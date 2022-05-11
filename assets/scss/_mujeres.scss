@@ -1,0 +1,120 @@
+.bodyMujeres{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 120PX auto 60px;
+    grid-template-areas: "nav nav" "header header" "main main" "footer footer";
+    nav{
+        grid-area: nav;
+    }
+    header{
+        background-color:rgb(189, 217, 228);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        grid-area: header;
+        video{
+            width: 25%;
+            height: 100%;
+        }
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    
+    }
+}
+.video3m{
+    width: 0% !important;
+}
+.contenedorTarjetaM{
+    background-color:rgb(189, 217, 228);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES  ROPA MUJERES */
+.jeanBaggyWhite{
+    background-image: url(../img/prodMujeres/jeans/jeanBaggyWhite.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.jeanWideBlue{
+    background-image: url(../img/prodMujeres/jeans/jeanWideBlue.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.jeanRectosCanesu{
+    background-image: url(../img/prodMujeres/jeans/rectosCanesu.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.jeanRectosTB{
+    background-image: url(../img/prodMujeres/jeans/rectosTirobajo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.jeanWideBlack{
+    background-image: url(../img/prodMujeres/jeans/wideBlack.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.vestidoCortoCrochetRayas{
+    background-image: url(../img/prodMujeres/vestidos/cortoCrochetRayas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.vestidoCortoFrunces{
+    background-image: url(../img/prodMujeres/vestidos/cortoFrunces.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.vestidoCortoTirantesFrunce{
+    background-image: url(../img/prodMujeres/vestidos/cortoTirantesFrunce.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.vestidoMidiTexture{
+    background-image: url(../img/prodMujeres/vestidos/miditexture.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE */
+@media (min-width: 480px){
+    .bodyMujeres{ 
+        grid-template-rows: 80px auto;
+        .tarjeta{
+        height: 300px !important;
+        }
+        header video{
+            width: 16.66% ;
+        }
+    }
+    .video3m{
+        width: 16.66% !important;
+    }   
+}
+@media (min-width:600px){
+    .bodyMujeres{
+        grid-template-rows: 80px auto;
+        .tarjeta{
+            height: 350px !important;
+            background-size: contain !important;
+        }
+    }
+    .tituloSeason{
+        font-size: 40px;
+    }
+}
+@media (min-width:1024px){
+    .contenedorTarjetaM{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .bodyMujeres .tarjeta{
+        height: 350px !important;
+        background-size: cover !important;
+    }
+}

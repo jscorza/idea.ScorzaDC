@@ -1,0 +1,33 @@
+.tarjeta{
+    width: 40%;
+    height: 230px;
+    background-color: $colorGeneral;
+    border-radius: 10px;
+    margin: 10px;
+    
+    box-shadow: 2px 2px 7px 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.tarjeta__titulo{
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 13px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: solid 20px;
+    
+}
+.tarjeta__img{
+    height: 90%; 
+}
+.tarjeta__boton{
+    position: relative;
+    
+    
+
+}
