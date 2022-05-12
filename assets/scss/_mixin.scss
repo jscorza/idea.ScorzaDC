@@ -1,0 +1,7 @@
+@mixin propiedadesForm($bgColor,$padding,$borde,$bordeRadio){
+    background-color: $bgColor;
+    padding: $padding;
+    border: $borde  ;
+    border-radius:$bordeRadio ;
+
+}

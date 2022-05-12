@@ -1,8 +1,8 @@
 .titulo{
-    height: 15%;    
-    background-color: rgba(255, 255, 255, 0.354);
-    border-radius: 30px;
-    font-size: 34px;
+    height: map-get($titulos, $key:altura );    
+    background-color: map-get($titulos, $key:color-fondo );
+    border-radius: map-get($titulos, $key:borde-radio);
+    font-size: map-get($titulos, $key:letra );
 }
 .tituloHM{
     padding-right: 10px;

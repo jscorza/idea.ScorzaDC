@@ -13,13 +13,16 @@
 
 }
 .tarjeta__titulo{
-    position: relative;
-    text-align: center;
-    color: black;
-    font-size: 13px;
-    background-color: rgb(255, 255, 255);
+    font-size: 15px;
     border-radius: 10px;
-    box-shadow: solid 20px;
+    padding-top: 3px;
+    padding: 2px;
+    
+    
+}
+.tarjeta__tituloH{
+    @extend .tarjeta__titulo;
+    background-color: rgba(255, 255, 255, 0.523);
     
 }
 .tarjeta__img{

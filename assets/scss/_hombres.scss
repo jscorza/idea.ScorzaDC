@@ -7,7 +7,7 @@
         grid-area: nav;
     }
     header{
-        background-color:rgb(95, 68, 68) ;
+        background-color:$colorH ;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -32,7 +32,7 @@
     width: 0% !important;
 }
 .contenedorTarjetaH{
-    background-color:rgb(95, 68, 68) ;
+    background-color:$colorH ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

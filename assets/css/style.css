@@ -1233,6 +1233,9 @@ a {
   .imgTwin {
     width: 90% !important;
   }
+  footer {
+    height: 200px;
+  }
 }
 
 .bodySobre {
@@ -1283,15 +1286,15 @@ a {
           justify-content: space-between;
 }
 
-.tarjeta__titulo {
-  position: relative;
-  text-align: center;
-  color: black;
-  font-size: 13px;
-  background-color: white;
+.tarjeta__titulo, .tarjeta__tituloH {
+  font-size: 15px;
   border-radius: 10px;
-  -webkit-box-shadow: solid 20px;
-          box-shadow: solid 20px;
+  padding-top: 3px;
+  padding: 2px;
+}
+
+.tarjeta__tituloH {
+  background-color: rgba(255, 255, 255, 0.523);
 }
 
 .tarjeta__img {
