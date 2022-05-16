@@ -1,0 +1,25 @@
+{
+  "name": "idea.scorzadc",
+  "version": "1.0.0",
+  "description": "para el seo:\r -le puse title a todas las pags\r -meta:desc a todas las pags\r -alt \"\" a las imagenes dentro de los html\r - cree el sitemap.xml",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jscorza/idea.ScorzaDC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jscorza/idea.ScorzaDC/issues"
+  },
+  "homepage": "https://github.com/jscorza/idea.ScorzaDC#readme",
+  "devDependencies": {
+    "node": "^17.7.2",
+    "nodemon": "^2.0.16",
+    "sass": "^1.51.0"
+  }
+}
