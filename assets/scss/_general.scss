@@ -6,3 +6,13 @@
 .tamIcono{
     width: 15px;
 }
+@media(max-width: 400px){
+    
+        footer{
+            height: 150px;
+        }
+        nav{
+            flex-wrap: nowrap;
+        }
+    
+}
