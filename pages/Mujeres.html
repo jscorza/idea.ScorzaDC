@@ -8,6 +8,7 @@
     <meta name="description" content="Ropa para ellas, pantalones, vestidos, blusas, camisas. Colores atractivos, outfits unicos. Fiestas y reuniones. Belgrano, Quilmes, Palermo, Ramos Mejia">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body class="bodyMujeres">
@@ -26,12 +27,12 @@
         </div>
     </nav>
     <header>
-        <video autoplay loop src="../assets/video/mujerCamina.mp4"></video>
-            <video autoplay loop src="../assets/video/decomujeres.mp4"></video>
-            <video autoplay loop src="../assets/video/mujerCamina.mp4"></video>
-            <video autoplay loop src="../assets/video/decomujeres.mp4"></video>
-            <video class="video3m" autoplay loop src="../assets/video/mujerCamina.mp4"></video>
-            <video class="video3m" autoplay loop src="../assets/video/decomujeres.mp4"></video>
+        <video autoplay loop src="../assets/video/mujerCamina.mp4"  data-aos="flip-up" ></video>
+            <video autoplay loop src="../assets/video/decomujeres.mp4"  data-aos="flip-up"></video>
+            <video autoplay loop src="../assets/video/mujerCamina.mp4"  data-aos="flip-up"></video>
+            <video autoplay loop src="../assets/video/decomujeres.mp4"  data-aos="flip-up"></video>
+            <video class="video3m" autoplay loop src="../assets/video/mujerCamina.mp4"  data-aos="flip-up"></video>
+            <video class="video3m" autoplay loop src="../assets/video/decomujeres.mp4"  data-aos="flip-up"></video>
         
     </header>
     <main>
@@ -119,6 +120,9 @@
     </footer>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>  
 
-        
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
