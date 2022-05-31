@@ -8,6 +8,7 @@
     <meta name="description" content="Ropa urbana para adolescentes, excelente calidad, estilo, innovacion. Buenos Aires, Argentina">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bodyIndex">
     <nav>
@@ -30,11 +31,11 @@
         
     </header>
     <main class="radio-btns" role="radiogroup">
-            <div class="contenedorH grow radio-btns__btn" role="radio">
+            <div class="contenedorH grow radio-btns__btn" data-aos="fade-right" role="radio">
                 <a class="tituloHM hvr-radial-out" href="./pages/hombres.html">Hombres</a>
             </div>
 
-            <div class="contenedorM grow radio-btns__btn" role="radio">
+            <div class="contenedorM grow radio-btns__btn "data-aos="fade-left" role="radio">
                 <a class="tituloHM hvr-radial-out" href="./pages/Mujeres.html">Mujeres</a>
             </div>
     </main>
@@ -61,5 +62,9 @@
 
     </footer> 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
