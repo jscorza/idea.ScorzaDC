@@ -3,6 +3,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 60px 250px 200px 70px;
     grid-template-areas: "nav nav" "header header" "main main" "footer footer" ;
+    background-color: $colorGeneral;
     header{
         grid-area: header;
         background-image: url(../img/gente1_700x.jpg);
