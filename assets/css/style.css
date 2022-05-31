@@ -485,6 +485,95 @@
   transform: scale(2);
 }
 
+.animTitulo {
+  padding-left: 6px;
+  margin-left: 6px;
+  color: #000000;
+  -webkit-animation-name: slide-in-blurred-right;
+          animation-name: slide-in-blurred-right;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  /* shorthand 
+    animation: slide-in-blurred-right 1s ease 0s 1 normal none;
+    */
+}
+
+@-webkit-keyframes slide-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.radio-btns:hover .radio-btns__btn:not(:hover) {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.radio-btns:hover .radio-btns__btn:not(:hover)::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.radio-btns__btn {
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.radio-btns__btn::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 .bodyContacto {
   background-color: #baafaf;
 }
@@ -621,8 +710,8 @@ ul li {
     width: 28px;
   }
   .bodyIndex {
-    -ms-grid-rows: 70px 400px 350px 90px;
-        grid-template-rows: 70px 400px 350px 90px;
+    -ms-grid-rows: 70px 400px 400px 90px !important;
+        grid-template-rows: 70px 400px 400px 90px !important;
   }
   .titulo {
     font-size: 54px;
@@ -659,8 +748,8 @@ ul li {
     width: 37px !important;
   }
   .bodyIndex {
-    -ms-grid-rows: 120px 600px 400px 120px;
-        grid-template-rows: 120px 600px 400px 120px;
+    -ms-grid-rows: 120px 600px 500px 120px !important;
+        grid-template-rows: 120px 600px 500px 120px !important;
   }
   .bodyIndex header {
     background-image: url(../img/deco/gente1.jpg);
@@ -1199,7 +1288,7 @@ a {
     font-size: 40px !important;
   }
   .tarjeta {
-    height: 300px !important;
+    height: 350px !important;
   }
   .imgTwin {
     width: 60% !important;
@@ -1275,7 +1364,7 @@ a {
 
 .tarjeta {
   width: 40%;
-  height: 230px;
+  height: 250px;
   background-color: #baafaf;
   border-radius: 10px;
   margin: 10px;
@@ -1301,6 +1390,7 @@ a {
   border-radius: 10px;
   padding-top: 3px;
   padding: 2px;
+  background-color: rgba(255, 255, 255, 0.705);
 }
 
 .tarjeta__tituloH {

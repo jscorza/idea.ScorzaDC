@@ -30,6 +30,7 @@
     
 }
 .contenedorM{
+    
 background-image: url(../img/deco/mujeresdec_55.jpg);
 background-size: cover;
 width: 60%;
@@ -51,7 +52,7 @@ width: 60%;
         width: 28px;
     }
     .bodyIndex{
-        grid-template-rows:70px 400px 350px 90px ;
+        grid-template-rows:70px 400px 400px 90px !important;
     }
     .titulo{
         font-size: 54px;
@@ -87,7 +88,7 @@ width: 60%;
         width: 37px!important;
     }
     .bodyIndex{
-        grid-template-rows:120px 600px 400px 120px ;
+        grid-template-rows:120px 600px 500px 120px !important;
         header{
         background-image: url(../img/deco/gente1.jpg);
         }
