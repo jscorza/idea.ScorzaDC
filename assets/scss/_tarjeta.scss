@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between !important;
 
 }
 .tarjeta__titulo{
@@ -31,6 +31,7 @@
 }
 .tarjeta__boton{
     position: relative;
+    
     
     
 
