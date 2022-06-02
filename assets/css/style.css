@@ -632,6 +632,10 @@ footer {
           justify-content: space-between;
 }
 
+footer .tamIconoR {
+  padding: 2px;
+}
+
 footer div {
   display: -webkit-box;
   display: -ms-flexbox;
